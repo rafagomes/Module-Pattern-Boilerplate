@@ -1,6 +1,11 @@
 window.MAINNAMESPACE = window.MAINNAMESPACE || {};
 MAINNAMESPACE.SUBNAMESPACE = MAINNAMESPACE.SUBNAMESPACEUI || {}; //you can put something like PROJECT.UTIL
 
+/*
+ In this example I'm protecting the $ of Jquery, preventing conflicts.
+*/
+
+
 (function($){
     
     MAINNAMESPACE.SUBNAMESPACE.Module = function(){
@@ -16,7 +21,8 @@ MAINNAMESPACE.SUBNAMESPACE = MAINNAMESPACE.SUBNAMESPACEUI || {}; //you can put s
                 //Implementation of Public Method
             },
             
-            init: function(){ // It's commom use initializations methods and jqueryBinds for bindObjects
+            // It's very usual implementing initialization's methods and jqueryBinds for bindObjects like $('object').bind('mouseEvent');
+            init: function(){ 
                 //Implementation of Initialization Method
             }
         };
