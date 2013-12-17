@@ -1,4 +1,4 @@
-/*global window, document, jQuery, namespace, mainnamespace, subnamespace*/
+/*global window, document, jQuery, namespace, mainnamespace*/
 window.namespace = window.namespace || {};
 mainnamespace.subnamespace = mainnamespace.subnamespace || {}; //you can put something like PROJECT.UTIL
 
