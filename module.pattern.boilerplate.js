@@ -3,30 +3,33 @@ window.namespace = window.namespace || {};
 namespace.subnamespace = namespace.subnamespace || {};
 
 (function (window, document, $) {
-
-    "use strict";
+    'use strict';
 
     namespace.subnamespace.Module = function () {
-        var privateObject,
+        var privateObject;
 
-            privateMethod = function () {
-                
-            };
+        function privateMethod () {
+            
+        }
 
+        function publicMethod () {
+            
+        }
+        
+        function init () {
+            
+        }
+        
         return {
 
-            publicMethod : function () {
-                
-            },
+            publicMethod : publicMethod,
 
-            init: function () {
-                
-            }
+            init: init
         };
     };
 
     $(function () {
-        var module = new namespace.subnamespace.Module();
+        var module = namespace.subnamespace.Module();
         module.init();
     });
 
